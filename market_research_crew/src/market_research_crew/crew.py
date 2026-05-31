@@ -7,14 +7,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# create the tools for the agent
+# tools for the agent
 web_search_tool = SerperDevTool()
 web_scraping_tool = ScrapeWebsiteTool()
 selenium_scraping_tool = SeleniumScrapingTool()
 
 toolkit = [web_search_tool, web_scraping_tool, selenium_scraping_tool]
 
-# define the crew class
+#crew class
 @CrewBase
 class MarketResearchCrew():
     """MarketResearchCrew crew"""
